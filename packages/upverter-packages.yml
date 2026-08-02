@@ -1,0 +1,9 @@
+generated: '2026-07-21'
+method: none
+source: npm registry search, PyPI, github.com/upverter
+notes: No first-party Upverter client libraries exist. npm search returns only third-party
+  utilities (e.g. gitbook-plugin-upverter); PyPI has no upverter package (404). The
+  github.com/upverter organization holds 11 repos, all forks/internal utilities (Kyoto
+  Tycoon client, Beanstream, closure-linter, Discourse plugins), dormant since 2019 —
+  none are SDKs for an Upverter API.
+packages: []

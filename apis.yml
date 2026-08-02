@@ -1,8 +1,23 @@
 aid: upverter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/upverter.png
 name: Upverter
-description: Upverter is a company surfaced as a portfolio company of version-one-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Upverter is a browser-based, collaborative electronic design automation (EDA)
+  platform for schematic capture and PCB layout, founded in Toronto in 2010 (Y Combinator
+  W11) and acquired by Altium in 2017. Surfaced as a Version One Ventures portfolio company.
+  As of the July 2026 enrichment probe the upverter.com platform returns HTTP 502 on every
+  path, its docs/blog/status subdomains no longer resolve, and no public API surface remains;
+  the GitHub organization is dormant since 2019.
 url: https://raw.githubusercontent.com/api-evangelist/upverter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +27,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Hardware
+- Electronics
+- PCB Design
+- EDA
+- Collaboration
 apis: []
+common:
+- type: DomainSecurity
+  url: security/upverter-domain-security.yml
+- type: LLMsTxt
+  url: llms/upverter-llms.txt
+- type: Website
+  url: https://upverter.com/
+- type: GitHubOrganization
+  url: https://github.com/upverter
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1

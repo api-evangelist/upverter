@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of https://upverter.com
+host: https://upverter.com
+notes: The upverter.com origin (AWS ELB) returns HTTP 502 for every path probed, including
+  the homepage; no well-known documents are retrievable. Docs/blog/status subdomains do
+  not resolve. Recorded as probe evidence that no discovery surface remains.
+documents:
+- path: /.well-known/security.txt
+  status: 502
+- path: /.well-known/openid-configuration
+  status: 502
+- path: /.well-known/oauth-authorization-server
+  status: 502
+- path: /.well-known/api-catalog
+  status: 502
+- path: /.well-known/ai-plugin.json
+  status: 502
+- path: /llms.txt
+  status: 502
+- path: /robots.txt
+  status: 502
