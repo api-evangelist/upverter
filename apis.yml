@@ -30,6 +30,9 @@ description: Upverter is a browser-based, collaborative electronic design automa
   path, its docs/blog/status subdomains no longer resolve, and no public API surface remains;
   the GitHub organization is dormant since 2019.
 url: https://raw.githubusercontent.com/api-evangelist/upverter/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "As of the July 2026 enrichment probe the upverter.com platform returns HTTP 502 on every path, its docs/blog/status subdomains no longer resolve, and no public API surface remains; the GitHub organiza"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
